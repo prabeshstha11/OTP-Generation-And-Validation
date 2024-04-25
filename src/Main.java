@@ -3,27 +3,22 @@ import RepetitionCount.MaxRepetition;
 import frontend.*;
 
 public class Main {
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
 
-        /********** OTP Generation and Validation through gmail using GUI **********/
-
-
+        /********** frontend implementation part **********/
         new SendOTP();
 
+        /**********
+         * bulk generation
+         **********/
 
-         /********** bulk OTP generation in order to observe the pattern and check the number of repetition **********/
+        int NUMBER_OF_OTP_TO_GENERATE = 10000;
+        GeneratingOTPs.generateOTP(NUMBER_OF_OTP_TO_GENERATE);
 
-
-//        int NUMBER_OF_OTP_TO_GENERATE = 10000;
-//      GeneratingOTPs.generateOTP(NUMBER_OF_OTP_TO_GENERATE);
-
-
-      /********** Sort the generated OTPS and check the repetition **********/
-//        int NUMBER_OF_COUNT = 4000;
-//       MaxRepetition.sortAndCheckRepetition(NUMBER_OF_COUNT);
+        /********** using sorting algorithm **********/
+        int NUMBER_OF_COUNT = 4000;
+        MaxRepetition.sortAndCheckRepetition(NUMBER_OF_COUNT);
 
     }
 
 }
-
