@@ -8,7 +8,7 @@ public class EmailSender {
     public static void sendOTP(String generatedOTP, String enteredEmail) {
         // Gmail account credentials
         String senderEmail = "";
-        String senderPassword = ""; // Use your Gmail password
+        String senderPassword = "";
 
         // Email properties
         Properties props = new Properties();
